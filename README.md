@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÉLÉVÉ | Premium Footwear & Luxury Accessories</title>
-    <meta name="description" content="ÉLÉVÉ - Nigeria's premier destination for authentic luxury footwear, designer bags, and premium accessories. Grade A originals only.">
+    <title>Pair Pressure | Premium Footwear & Luxury Bags</title>
+    <meta name="description" content="Pair Pressure - Nigeria's premier destination for authentic luxury footwear, designer bags, and premium accessories. Grade A originals only.">
     <meta name="keywords" content="luxury shoes Nigeria, designer bags, authentic sneakers, premium footwear, original Jordan, Nike, Adidas, luxury accessories">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -122,7 +122,7 @@
             font-size: 2.2rem;
             font-weight: 700;
             color: var(--gold);
-            letter-spacing: 3px;
+            letter-spacing: 2px;
         }
 
         .logo span {
@@ -202,7 +202,7 @@
             font-size: 4.5rem;
             margin-bottom: 20px;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
         }
 
         .hero p {
@@ -331,6 +331,7 @@
             overflow: hidden;
             position: relative;
             transition: var(--transition);
+            cursor: pointer;
         }
 
         .category-card:hover {
@@ -462,6 +463,11 @@
             color: #aaa;
         }
 
+        /* Bags Section */
+        .bags-section {
+            background-color: var(--black);
+        }
+
         /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
@@ -566,13 +572,13 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">ÉLÉVÉ</div>
+            <div class="logo">Pair <span>Pressure</span></div>
             <nav>
                 <ul id="nav-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#featured">Featured</a></li>
-                    <li><a href="#catalog">Catalog</a></li>
-                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#shoes">Shoes</a></li>
+                    <li><a href="#bags">Bags</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="mobile-menu" id="mobile-menu">
@@ -586,9 +592,9 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>ÉLÉVÉ</h1>
-                <p>Exclusive Footwear & Luxury Accessories. Experience Unmatched Elegance.</p>
-                <a href="#catalog" class="btn">Explore Collection</a>
+                <h1>Pair Pressure</h1>
+                <p>Premium Footwear & Luxury Bags. Authentic Grade A Originals Only.</p>
+                <a href="#shoes" class="btn">Explore Collection</a>
             </div>
         </div>
     </section>
@@ -596,7 +602,7 @@
     <!-- Featured Products Section -->
     <section class="featured-products" id="featured">
         <div class="container">
-            <h2 class="section-title">Curated Selection</h2>
+            <h2 class="section-title">Featured Products</h2>
             <div class="products-grid">
                 <!-- Featured Product 1 -->
                 <div class="product-card">
@@ -633,7 +639,7 @@
                 <!-- Featured Product 3 -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Designer Handbag">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Designer Handbag">
                         <div class="product-overlay">
                             <a href="https://wa.me/2349163702078?text=Hi,%20I'm%20interested%20in%20the%20Designer%20Handbag" class="btn" target="_blank">Inquire</a>
                         </div>
@@ -670,14 +676,14 @@
         <div class="container">
             <h2 class="section-title">Collections</h2>
             <div class="categories-grid">
-                <div class="category-card">
+                <div class="category-card" onclick="location.href='#shoes'">
                     <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sneakers" class="category-image">
                     <div class="category-overlay">
                         <h3 class="category-name">Sneakers</h3>
                     </div>
                 </div>
-                <div class="category-card">
-                    <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bags" class="category-image">
+                <div class="category-card" onclick="location.href='#bags'">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bags" class="category-image">
                     <div class="category-overlay">
                         <h3 class="category-name">Bags</h3>
                     </div>
@@ -698,10 +704,10 @@
         </div>
     </section>
 
-    <!-- Catalog Section -->
-    <section class="catalog" id="catalog">
+    <!-- Shoes Catalog Section -->
+    <section class="catalog" id="shoes">
         <div class="container">
-            <h2 class="section-title">Brand Catalog</h2>
+            <h2 class="section-title">Premium Footwear Collection</h2>
             
             <div class="brands-grid" id="brands">
                 <div class="brand-card">
@@ -740,55 +746,139 @@
                     </div>
                     <div class="brand-name">Reebok</div>
                 </div>
-                <div class="brand-card">
-                    <div class="brand-logo">
-                        <span style="font-weight: bold; color: var(--gold);">CONVERSE</span>
-                    </div>
-                    <div class="brand-name">Converse</div>
-                </div>
-                <div class="brand-card">
-                    <div class="brand-logo">
-                        <span style="font-weight: bold; color: var(--gold);">VANS</span>
-                    </div>
-                    <div class="brand-name">Vans</div>
-                </div>
             </div>
 
-            <h3 class="section-title" style="margin-top: 60px;">Premium Collection</h3>
+            <h3 class="section-title" style="margin-top: 60px;">Sneaker Collection</h3>
             <div class="catalog-grid">
-                <!-- These would be your 50+ products in a real implementation -->
+                <!-- Nike Shoes -->
                 <div class="catalog-item">
                     <div class="catalog-image">
                         <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nike Dunk Low">
                     </div>
                     <div class="catalog-content">
-                        <h4 class="catalog-title">Nike Dunk Low</h4>
-                        <p class="catalog-type">Sneakers</p>
+                        <h4 class="catalog-title">Nike Dunk Low Retro</h4>
+                        <p class="catalog-type">Nike • Sneakers</p>
                     </div>
                 </div>
                 <div class="catalog-item">
                     <div class="catalog-image">
-                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Adidas Stan Smith">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Nike Air Max 97">
                     </div>
                     <div class="catalog-content">
-                        <h4 class="catalog-title">Adidas Stan Smith</h4>
-                        <p class="catalog-type">Sneakers</p>
+                        <h4 class="catalog-title">Nike Air Max 97</h4>
+                        <p class="catalog-type">Nike • Sneakers</p>
+                    </div>
+                </div>
+                
+                <!-- Jordan Shoes -->
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jordan 4 Retro">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">Air Jordan 4 Retro</h4>
+                        <p class="catalog-type">Jordan • Sneakers</p>
                     </div>
                 </div>
                 <div class="catalog-item">
                     <div class="catalog-image">
-                        <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Designer Tote Bag">
+                        <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jordan 11 Retro">
                     </div>
                     <div class="catalog-content">
-                        <h4 class="catalog-title">Designer Tote Bag</h4>
-                        <p class="catalog-type">Bags</p>
+                        <h4 class="catalog-title">Air Jordan 11 Retro</h4>
+                        <p class="catalog-type">Jordan • Sneakers</p>
                     </div>
                 </div>
-                <!-- Additional catalog items would go here -->
+                
+                <!-- Adidas Shoes -->
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Adidas Yeezy Boost">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">Adidas Yeezy Boost 350</h4>
+                        <p class="catalog-type">Adidas • Sneakers</p>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Adidas Superstar">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">Adidas Superstar</h4>
+                        <p class="catalog-type">Adidas • Sneakers</p>
+                    </div>
+                </div>
+                
+                <!-- New Balance Shoes -->
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1542280756-74b2f55e73ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="New Balance 550">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">New Balance 550</h4>
+                        <p class="catalog-type">New Balance • Sneakers</p>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="New Balance 990">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">New Balance 990v5</h4>
+                        <p class="catalog-type">New Balance • Running</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bags Section -->
+    <section class="bags-section" id="bags">
+        <div class="container">
+            <h2 class="section-title">Luxury Bags Collection</h2>
+            <div class="catalog-grid">
+                <!-- Bags -->
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Designer Handbag">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">Luxury Leather Tote</h4>
+                        <p class="catalog-type">Handbag • Women</p>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Designer Backpack">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">Premium Leather Backpack</h4>
+                        <p class="catalog-type">Backpack • Unisex</p>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Crossbody Bag">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">Designer Crossbody Bag</h4>
+                        <p class="catalog-type">Crossbody • Women</p>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Evening Clutch">
+                    </div>
+                    <div class="catalog-content">
+                        <h4 class="catalog-title">Evening Clutch Purse</h4>
+                        <p class="catalog-type">Clutch • Women</p>
+                    </div>
+                </div>
             </div>
             
             <div style="text-align: center; margin-top: 40px;">
-                <a href="https://wa.me/2349163702078?text=Hi,%20I%20would%20like%20to%20see%20the%20full%20catalog" class="btn" target="_blank">View Full Catalog</a>
+                <a href="https://wa.me/2349163702078?text=Hi,%20I%20would%20like%20to%20see%20the%20full%20shoe%20and%20bag%20catalog" class="btn" target="_blank">View Full Catalog</a>
             </div>
         </div>
     </section>
@@ -798,7 +888,7 @@
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
             <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-                <p>Ready to elevate your style? Contact us for inquiries about our premium collection of authentic footwear and luxury accessories.</p>
+                <p>Ready to elevate your style? Contact us for inquiries about our premium collection of authentic footwear and luxury bags.</p>
                 <div style="margin-top: 30px;">
                     <a href="https://wa.me/2349163702078" class="btn" style="margin: 10px;" target="_blank">WhatsApp</a>
                     <a href="tel:+2349163702078" class="btn btn-outline" style="margin: 10px;">Call Us</a>
